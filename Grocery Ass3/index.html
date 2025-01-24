@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="maingroceryitemcontainer">
+    <header class="header">
+        <div class="header-container">
+            <!-- Super Value Deals Text -->
+            <div class="deals-text">
+                Super Value Deals - Save more with coupons
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <img src="assets/english.svg" alt="English Icon" class="language-icon">
+                <span>English</span>
+                <select class="language-dropdown">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Left: Logo -->
+            <div class="logo">
+                <img src="assets/freshcart-logo.svg" alt="FreshCart Logo" class="logo-image">
+            </div>
+    
+            <!-- Center: Search Bar and Location -->
+            <div class="search-location">
+                <input type="text" class="search-input" placeholder="Search for products">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>  
+                </button>
+                <input type="text" class="location-input" placeholder="Location">
+                <i class="fas fa-map-marker-alt location-icon"></i>  
+            </div>
+    
+            <!-- Right: Icons -->
+            <div class="header-icons">
+                <div class="icon">
+                    <i class="fas fa-heart"></i> <!-- Wishlist Icon -->
+                </div>
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i> <!-- Cart Icon -->
+                </div>
+                <div class="icon">
+                    <i class="fas fa-user"></i> <!-- Profile Icon -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <!-- Left: All Departments Button -->
+            <div class="all-departments">
+                <button class="all-departments-btn">
+                    <i class="fas fa-bars"></i> All Departments
+                </button>
+                <!-- Dropdown Menu for All Departments -->
+                <ul class="dropdown-menu">
+                    <li>Grocery</li>
+                    <li>Cleaning Essentials</li>
+                    <li>Personal Care</li>
+                    <li>Snacks & Beverages</li>
+                    <li>Fruits & Vegetables</li>
+                    <li>Meat & Fish</li>
+                </ul>
+            </div>
+    
+            <!-- Right: Navigation Links -->
+            <ul class="nav-links">
+                <li class="nav-item">
+                    Home
+                    <ul class="dropdown">
+                        <li>Overview</li>
+                        <li>Updates</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    Shop
+                    <ul class="dropdown">
+                        <li>Products</li>
+                        <li>Categories</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    Stores
+                    <ul class="dropdown">
+                        <li>Nearby Stores</li>
+                        <li>All Stores</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    Mega Menu
+                    <ul class="dropdown">
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    Pages
+                    <ul class="dropdown">
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    Account
+                    <ul class="dropdown">
+                        <li>Login</li>
+                        <li>Register</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    Docs
+                    <ul class="dropdown">
+                        <li>Documentation</li>
+                        <li>Support</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="promo-banner">
+        <!-- Image with Overlay -->
+        <div class="promo-container">
+            <img src="assets/slide-2.jpg" alt="Promo Banner" class="promo-image">
+            <div class="promo-overlay">
+                <!-- Yellow Badge -->
+                <div class="promo-badge">
+                    Free Shipping - Orders over $100
+                </div>
+                <!-- Heading and Paragraph -->
+                <h2 class="promo-heading">
+                    Free Shipping on orders over <span>$100</span>
+                </h2>
+                <p class="promo-text">
+                    Free Shipping to First-Time Customers Only, After promotions and discounts are applied.
+                </p>
+                <!-- Shop Now Button -->
+                <button class="shop-now-btn">Show Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="featured-categories">
+        <div class="categories-container">
+            <!-- Section Heading -->
+            <h2 class="categories-heading">Featured Categories</h2>
+            <div class="categories-grid">
+                <!-- Category Item 1 -->
+                <div class="category-item">
+                    <img src="assets/category-cleaning-essentials.jpg" alt="Cleaning Essentials" class="category-image">
+                    <p class="category-title">Cleaning Essentials</p>
+                </div>
+                <!-- Category Item 2 -->
+                <div class="category-item">
+                    <img src="assets/category-pet-care.jpg" alt="Pet Care" class="category-image">
+                    <p class="category-title">Pet Care</p>
+                </div>
+                <!-- Category Item 3 -->
+                <div class="category-item">
+                    <img src="assets/category-fruits-vegetables.jpg" alt="Fruits & Vegetables" class="category-image">
+                    <p class="category-title">Fruits & Vegetables</p>
+                </div>
+                <!-- Category Item 4 -->
+                <div class="category-item">
+                    <img src="assets/category-bakery-biscuits.jpg" alt="Bakery & Buns" class="category-image">
+                    <p class="category-title">Freshly Baked Buns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="grocery-banners">
+        <div class="banners-container">
+            <!-- Banner 1 -->
+            <div class="banner-item">
+                <img src="assets/grocery-banner.png" alt="Fruits & Vegetables" class="banner-image">
+                <div class="banner-overlay">
+                    <h3 class="banner-title">Fruits & Vegetables</h3>
+                    <p class="banner-subtext">Get Upto 30% Off</p>
+                    <button class="banner-btn">Shop Now</button>
+                </div>
+            </div>
+            <!-- Banner 2 -->
+            <div class="banner-item">
+                <img src="assets/grocery-banner-2.jpg" alt="Freshly Baked Buns" class="banner-image">
+                <div class="banner-overlay">
+                    <h3 class="banner-title">Freshly Baked Buns</h3>
+                    <p class="banner-subtext">Get Upto 25% Off</p>
+                    <button class="banner-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="popular-products">
+        <div class="products-container">
+            <!-- Section Heading -->
+            <h2 class="products-heading">Popular Products</h2>
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-1.jpg" alt="Product 1" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 1</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge green">10% Off</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-2.jpg" alt="Product 2" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 2</h3>
+                        <p class="product-description">Another short description about this amazing product.</p>
+                        <p class="product-secondary-text">Limited-time offer details can be shown here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $18.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div> 
+
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge green">10% Off</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-3.jpg" alt="Product 3" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 3</h3>
+                        <p class="product-description">Another short description about this amazing product.</p>
+                        <p class="product-secondary-text">Limited-time offer details can be shown here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $18.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge green">10% Off</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-4.jpg" alt="Product 4" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 4</h3>
+                        <p class="product-description">Another short description about this amazing product.</p>
+                        <p class="product-secondary-text">Limited-time offer details can be shown here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $18.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge green">10% Off</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-5.jpg" alt="Product 5" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 5</h3>
+                        <p class="product-description">Another short description about this amazing product.</p>
+                        <p class="product-secondary-text">Limited-time offer details can be shown here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $18.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-6.jpg" alt="Product6" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 6</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-7.jpg" alt="Product 7" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 7</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-8.jpg" alt="Product 8" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 8</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge green">10% Off</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-9.jpg" alt="Product 9" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 9</h3>
+                        <p class="product-description">Another short description about this amazing product.</p>
+                        <p class="product-secondary-text">Limited-time offer details can be shown here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $18.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge green">10% Off</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-10.jpg" alt="Product 10" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 10</h3>
+                        <p class="product-description">Another short description about this amazing product.</p>
+                        <p class="product-secondary-text">Limited-time offer details can be shown here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $18.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge green">10% Off</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-11.jpg" alt="Product 11" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 11</h3>
+                        <p class="product-description">Another short description about this amazing product.</p>
+                        <p class="product-secondary-text">Limited-time offer details can be shown here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $18.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-12.jpg" alt="Product 12" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 12</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-13.jpg" alt="Product 13" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 13</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-12.jpg" alt="Product 12" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 14</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="product-item">
+                    <!-- Badge -->
+                    <div class="badge red">Sale</div>
+                    <!-- Image -->
+                    <img src="assets/product-img-13.jpg" alt="Product 13" class="product-image">
+                    <!-- Product Details -->
+                    <div class="product-info">
+                        <h3 class="product-title">Product 15</h3>
+                        <p class="product-description">A short description of the product, highlighting its key features.</p>
+                        <p class="product-secondary-text">More details or promotional offers go here.</p>
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- Price -->
+                        <div class="product-price">
+                            $25.00
+                        </div>
+                        <!-- Add to Cart Button -->
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="daily-best-sells">
+    <div class="container"> 
+        <!-- Left Block -->
+        <div class="daily-deal-left">
+            <div class="overlay-content">
+                <h2 class="daily-heading">100% Organic Coffee Beans.</h2>
+                <p class="daily-description">Get the best deal before close.</p>
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+        </div>
+
+        <!-- Right Blocks -->
+        <div class="daily-products">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="assets/product-img-11.jpg" alt="Roast Ground Coffee" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Roast Ground Coffee</h3>
+                    <p class="product-category">Tea, Coffee & Drinks</p>
+                    <div class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <div class="product-price">$13.5 <span class="original-price">$18</span></div>
+                    <button class="add-to-cart">+ Add to cart</button>
+                </div>
+                <div class="timer-block">
+                    <span class="time-value">1411</span> Days
+                    <span class="time-value">12</span> Hours
+                    <span class="time-value">16</span> Mins
+                    <span class="time-value">3</span> Sec
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="assets/product-img-12.jpg" alt="Crushed Tomatoes" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Crushed Tomatoes</h3>
+                    <p class="product-category">Fruits & Vegetables</p>
+                    <div class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <div class="product-price">$13.5 <span class="original-price">$18</span></div>
+                    <button class="add-to-cart">+ Add to cart</button>
+                </div>
+                <div class="timer-block">
+                    <span class="time-value">1411</span> Days
+                    <span class="time-value">12</span> Hours
+                    <span class="time-value">16</span> Mins
+                    <span class="time-value">3</span> Sec
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="assets/product-img-13.jpg" alt="Golden Pineapple" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Golden Pineapple</h3>
+                    <p class="product-category">Fruits & Vegetables</p>
+                    <div class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <div class="product-price">$14.4</div>
+                    <button class="add-to-cart">+ Add to cart</button>
+                </div>
+                <div class="timer-block">
+                    <span class="time-value">1411</span> Days
+                    <span class="time-value">12</span> Hours
+                    <span class="time-value">16</span> Mins
+                    <span class="time-value">3</span> Sec
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<section class="features-section">
+    <div class="containerr">
+        <div class="feature">
+            <i class="fa fa-cube feature-icon"></i>
+            <h3 class="feature-title">10 minute grocery now</h3>
+            <p class="feature-description">
+                Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.
+            </p>
+        </div>
+        <div class="feature">
+            <i class="fa fa-gift feature-icon"></i>
+            <h3 class="feature-title">Best Prices & Offers</h3>
+            <p class="feature-description">
+                Cheaper prices than your local supermarket, great cashback offers to top it off. Get best prices & offers.
+            </p>
+        </div>
+        <div class="feature">
+            <i class="fa fa-cube feature-icon"></i>
+            <h3 class="feature-title">Wide Assortment</h3>
+            <p class="feature-description">
+                Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.
+            </p>
+        </div>
+        <div class="feature">
+            <i class="fa fa-refresh feature-icon"></i>
+            <h3 class="feature-title">Easy Returns</h3>
+            <p class="feature-description">
+                Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="footer-links">
+    <div class="container">
+        <div class="footer-column">
+            <h4>Categories</h4>
+            <ul>
+                <li>Vegetables & Fruits</li>
+                <li>Breakfast & instant food</li>
+                <li>Bakery & Biscuits</li>
+                <li>Atta, rice & dal</li>
+                <li>Sauces & spreads</li>
+                <li>Organic & gourmet</li>
+                <li>Baby care</li>
+                <li>Cleaning essentials</li>
+                <li>Personal care</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Get to know us</h4>
+            <ul>
+                <li>Company</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Help Center</li>
+                <li>Our Value</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>For Consumers</h4>
+            <ul>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Product Returns</li>
+                <li>FAQ</li>
+                <li>Shop Checkout</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Become a Shopper</h4>
+            <ul>
+                <li>Shopper Opportunities</li>
+                <li>Become a Shopper</li>
+                <li>Earnings</li>
+                <li>Ideas & Guides</li>
+                <li>New Retailers</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Freshcart programs</h4>
+            <ul>
+                <li>Freshcart programs</li>
+                <li>Gift Cards</li>
+                <li>Promos & Coupons</li>
+                <li>Freshcart Ads</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="payment-partners">
+    <div class="container">
+        <!-- Left: Payment Partners Logos -->
+        <div class="payment-logos">
+            <h4>Payment Partners</h4>
+            <div class="logos">
+                <img src="assets/amazonpay.svg" alt="amazonpay">
+                <img src="assets/visa (1).svg" alt="Visa">
+                <img src="assets/mastercard (1).svg" alt="MasterCard">
+                <img src="assets/american-express.svg" alt="american-express">
+                <img src="assets/paypal.svg" alt="PayPal">
+            </div>
+        </div>
+
+        <!-- Right: Get Deliveries Section -->
+        <div class="delivery-info">
+            <h4>Get deliveries with FreshCart</h4>
+            <div class="app-buttons">
+                <img src="assets/appstore-btn.svg" alt="appstore-btn">
+                <img src="assets/googleplay-btn.svg" alt="googleplay-btn">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-container">
+    <div class="container">
+        <!-- Left Section: Texts -->
+        <div class="footer-left">
+            <p>
+                Powered by FreshCart &copy; 2024 All rights reserved.Designed by <a href=https://freshcart-next-js.vercel.app/ target="_blank">Bhumika Barethiya!!</a>
+            </p>
+        </div>
+
+        <!-- Right Section: Follow Us & Buy Now Button -->
+        <div class="footer-right">
+            <div class="social-icons">
+                <p>Follow us on</p>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="buy-now">
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-basket"></i> Buy Now
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div> <!--Main container ends here-->
+</body>
+</html>
