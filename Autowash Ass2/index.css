@@ -1,0 +1,986 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Top Header */
+.top-header {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo a {
+  font-size: 50px;  
+  font-weight: 800;
+  color: #022447; 
+  text-decoration: none;
+   
+}
+
+.logo a span {
+  color: #931206;  
+  font-weight: 900;
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-info .info-item i {
+  color: #FF6F61;
+}
+
+
+/* Navigation Bar */
+.main-nav {
+  background-color: #011b37; /* Blue background for the navigation bar */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Spacing between navigation links */
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.main-nav .nav-links li {
+  margin: 0;
+}
+
+.main-nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav .nav-links li a.active {
+  color: red; /* Highlight "Home" with red color */
+}
+
+.main-nav .nav-links li a:hover {
+  color: #f8f9fa;
+}
+
+.main-nav .nav-button {
+  margin-left: auto; /* Push the button to the far right */
+}
+
+.main-nav .nav-button .btn-primary {
+  background-color: #e8edf2; /* Navy Blue */
+  color: #1007b7;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav .nav-button .btn-primary:hover {
+  background-color: #001a35; /* Darker Navy */
+}
+
+ 
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url('images/carousel-3.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+  background-color: #FF6F61;
+  color: #fff;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #e55b4a;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: #333;
+  color: #fff;
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: #444;
+}
+ 
+
+
+/* Car Washing and Detailing Section */
+.car-washing-detailing {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.car-washing-detailing .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.car-washing-detailing .content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.car-washing-detailing .image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.car-washing-detailing .image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-washing-detailing .text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.car-washing-detailing .text h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.car-washing-detailing .text p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.car-washing-detailing .text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.car-washing-detailing .text ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.car-washing-detailing .text ul li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #FF6F61;
+  font-size: 16px;
+}
+
+.car-washing-detailing .text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #FF6F61;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.car-washing-detailing .text .btn:hover {
+  background-color: #e55b4a;
+}
+
+
+.what-we-do {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.what-we-do .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.what-we-do .services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.what-we-do .service-item {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.what-we-do .service-item i {
+  font-size: 50px;
+  color: #FF6F61;
+  margin-bottom: 20px;
+}
+
+.what-we-do .service-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.what-we-do .service-item p {
+  font-size: 16px;
+  color: #777;
+}
+
+.what-we-do .service-item:hover {
+  transform: translateY(-10px);
+}
+
+
+.stats {
+  background-color: #1a202c;
+  color: white;
+  padding: 50px 30px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  text-align: center;
+  width: 23%;
+}
+
+.stat i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.stat h3 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.stat p {
+  font-size: 16px;
+}
+
+.pricing {
+  padding: 50px 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 36px;
+  color: #FF6F61;
+  margin-bottom: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan {
+  background-color: #f7f7f7;
+  padding: 30px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.plan h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.plan .price {
+  font-size: 36px;
+  color: #FF6F61;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.plan .btn {
+  background-color: #FF6F61;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Washing Points Section */
+.washing-points {
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+}
+
+.washing-points .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.washing-points-left {
+  flex: 1;
+  color: #333;
+}
+
+.washing-points-left h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.washing-points-left p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.washing-points-left .points-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.washing-points-left .point {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.washing-points-left .point img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.washing-points-left .point span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Washing Points Form (Right Side) */
+.washing-points-right {
+  flex: 1;
+  background-color: #FF6F61; /* Red Background */
+  padding: 30px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.washing-points-right h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.washing-points-right p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.washing-points-right form input,
+.washing-points-right form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.washing-points-right form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.washing-points-right form button:hover {
+  background-color: #444;
+}
+
+ 
+.team {
+  background-color: #f4f4f4;
+  padding: 50px 30px;
+}
+
+.team h2 {
+  font-size: 36px;
+  color: #FF6F61;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-member {
+  width: 23%;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonials {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.testimonials .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonials .testimonials-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonials .testimonial-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonials .testimonial-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonials .testimonial-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.testimonials .testimonial-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.testimonials .testimonial-content span {
+  font-size: 14px;
+  color: #888;
+}
+
+.testimonials .testimonial-item:hover {
+  transform: translateY(-10px);
+}
+
+.latest-news {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.latest-news .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.latest-news h2 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.latest-news .news-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.latest-news .news-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.latest-news .news-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.latest-news .news-content {
+  padding: 20px;
+}
+
+.latest-news .news-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.latest-news .news-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.latest-news .news-content a {
+  color: #FF6F61;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.latest-news .news-item:hover {
+  transform: translateY(-10px);
+}
+
+
+ 
+/* Footer Styling */
+.footer {
+  background-color: #032244;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer .footer-section {
+  flex: 1 1 20%; /* Flexible width */
+  min-width: 200px;
+}
+
+.footer .footer-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.footer .footer-section ul li i {
+  color: #FF6F61; /* Accent color for icons */
+}
+
+.footer .footer-section ul li a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .footer-section ul li a:hover {
+  color: #ddd;
+}
+
+.footer .newsletter p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .newsletter input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.footer .newsletter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF6F61; /* Accent color for button */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer .newsletter button:hover {
+  background-color: #e55549;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #f8f9fa;
+}
+
+
+
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .top-header .container,
+  .main-nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo a {
+    font-size: 28px; /* Reduce font size for mobile */
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero .container {
+    padding: 0 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .car-washing-detailing .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .car-washing-detailing .image,
+  .car-washing-detailing .text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .what-we-do .services {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .plans {
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .washing-points .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .washing-points-left,
+  .washing-points-right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%; /* Make team members larger on mobile */
+    margin-bottom: 20px;
+  }
+
+  .testimonials .testimonials-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latest-news .news-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Small Screens (Mobile Portrait) */
+@media (max-width: 480px) {
+  .top-header .container {
+    padding: 0 10px;
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .car-washing-detailing .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .what-we-do .services {
+    grid-template-columns: 1fr; /* 1 column for smaller screens */
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .washing-points-left .points-container {
+    flex-direction: column;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
+
+  .testimonials .testimonials-items {
+    flex-direction: column;
+  }
+
+  .latest-news .news-items {
+    flex-direction: column;
+  }
+
+  .footer .footer-section {
+    width: 100%;
+  }
+}
